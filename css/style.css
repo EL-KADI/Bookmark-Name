@@ -1,0 +1,184 @@
+body {
+  background-color: #f7ecde;
+}
+.custom-h2 {
+  font-size: 3.125rem;
+  font-family: Pacifico, cursive;
+  font-weight: 500;
+  text-align: center;
+  height: 20px;
+  transform: translateY(-80%);
+  position: relative;
+  margin-top: -20px;
+}
+
+.custom-width {
+  position: relative;
+  height: 20px;
+  transform: translateY(50%);
+}
+.custom-width::before {
+  content: "";
+  background-color: rgb(254, 194, 96);
+  width: 100%;
+  display: block;
+  height: 20px;
+  transition: all 0.5s;
+  transform: translateY(-50%);
+  transform: translateY(-10%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.custom-width:hover::before {
+  height: 35px;
+}
+::selection {
+  background-color: rgb(254, 194, 96);
+}
+.custom-border {
+  border-bottom: dotted 2px;
+  width: 83%;
+}
+.custom-design {
+  font-family: Righteous, cursive;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  background: linear-gradient(to right, rgb(4, 112, 4), rgb(234, 201, 15));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font-edit {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 600;
+  color: rgb(33, 37, 41);
+}
+
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #bb4120;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #bb4120;
+  --bs-btn-active-border-color: #bb4120;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #bb4120;
+  --bs-btn-disabled-border-color: #bb4120;
+}
+.btn-submit {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.e-f-o {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 700;
+  color: rgb(33, 37, 41);
+  padding: 10px 0;
+}
+.btn-info {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9eb23b;
+  --bs-btn-border-color: #9eb23b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8a9e23;
+  --bs-btn-hover-border-color: #8a9e23;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #8a9e23;
+  --bs-btn-active-border-color: #8a9e23;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #8a9e23;
+  --bs-btn-disabled-border-color: #8a9e23;
+  margin-bottom: 5px !important;
+  margin-top: 10px !important;
+}
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+  --bs-btn-hover-border-color: #d30820;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #d30820;
+  --bs-btn-active-border-color: #d30820;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #d30820;
+  --bs-btn-disabled-border-color: #d30820;
+  margin-bottom: 5px !important;
+  margin-top: 10px !important;
+}
+.custom-m {
+  margin-bottom: 5px !important;
+  margin-top: 10px !important;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.font-b {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3125rem;
+}
+.color-icon-one {
+  color: #eb1d36;
+}
+.color-icon-tow {
+  color: #5d9a2b;
+}
+.color-icon-three {
+  color: #e1de2b;
+}
+.form-control:focus {
+  box-shadow: 0 0 10px 1px rgb(254, 194, 96);
+  border-color: rgb(254, 194, 96);
+}
+
+.form-control.invalid {
+  box-shadow: 0 0 10px 1px red;
+  border-color: red;
+}
+
+.form-control.valid {
+  box-shadow: 0 0 10px 1px green;
+  border-color: green;
+}
